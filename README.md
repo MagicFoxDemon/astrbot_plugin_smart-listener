@@ -62,5 +62,5 @@
 
 ## 📄 License
 
-本项目采用 MIT License 许可。
+本项目采用 AGPL-3.0 license 许可。
 
