@@ -22,7 +22,7 @@
 2. 也可以将整个astrbot_plugin_smart-listenerk克隆到AstrBot/data/plugins/
 
 **配置方式**
-- **插件默认禁用。启用前需要指定判断相关性模型供应商和更具你的机器人的人格编写相关性判断提示词。**
+- **插件默认禁用。启用前需要指定判断相关性模型供应商，并根据你的bot的人格编写相关性判断提示词。**
 - **可以使用默认的提示词，将名字修改为你的机器人的名字即可。**
 - **在AstrBot的服务提供商中添加提供商后将提供商的ID填入relevance_checker_provider_id即可**
 - **请确保 relevance_checker_provider_id 指向一个响应快、成本低的小型语言模型。**
