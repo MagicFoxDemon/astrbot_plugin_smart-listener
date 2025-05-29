@@ -2,7 +2,7 @@
 
 ## 🧠 项目简介
 
-`astrbot-plugin-smart-listener` 是一个为 [AstrBot](https://github.com/Soulter/AstrBot) 设计的智能监听插件，旨在提升机器人在指定群组中对非 `@` 消息的响应策略。通过调用轻量语言模型（SLM），插件能够判断群聊消息与预设主题的相关性，仅在必要时触发主语言模型（LLM）进行响应，从而让bot更合时宜的回复群友的发言。
+`astrbot-plugin-smart-listener` 是一个为 [AstrBot](https://github.com/Soulter/AstrBot) 设计的智能监听插件，旨在提升机器人在指定群组中对非 `@` 消息的响应策略。通过调用轻量语言模型，插件能够判断群聊消息与bot角色的相关性，仅在话题和bot的角色相关时触发机器人进行进行响应并回复，从而让bot更合时宜的回复群友的发言。
 
 ---
 
