@@ -1,4 +1,4 @@
-# AstrBot 智能智能监听器 astrbot-plugin-smart-listener
+# AstrBot 智能监听器 astrbot-plugin-smart-listener
 
 ## 🧠 项目简介
 
