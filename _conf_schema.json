@@ -1,0 +1,29 @@
+{
+  "enabled": {
+    "description": "是否启用智能监听功能总开关。启用后，插件只会在白名单群组中监听消息。",
+    "type": "bool",
+    "default": false,
+    "hint": "设置为 true 启用，false 禁用。"
+  },
+  "relevance_checker_provider_id": {
+    "description": "用于判断消息是否与机器人相关的LLM供应商ID。请填写供应商在AstrBot中配置的ID。留空则此功能不工作。",
+    "type": "string",
+    "default": "",
+    "hint": "推荐使用轻量级、低延迟的模型作为相关性判断LLM。"
+  },
+  "relevance_checker_system_prompt": {
+    "description": "用于相关性判断LLM的系统提示词。用于指导LLM判断消息是否与机器人相关。请确保提示词要求LLM仅回复 'yes' 或 'no'。",
+    "type": "string",
+    "default": "Please read the following message and determine if it is directly addressed to or clearly about the character '你的bot的名字'. Reply ONLY with 'yes' if it is, and 'no' if it is not. Do not include any other text.",
+    "hint": "修改此提示词以调整相关性判断的标准。务必要求LLM仅返回 'yes' 或 'no'。"
+  },
+  "group_whitelist": {
+    "description": "启用智能监听功能的群组ID列表。只对列表中的群组消息进行相关性判断和回复。群组ID通常是数字。",
+    "type": "list",
+    "items": {
+      "type": "string"
+    },
+    "default": [],
+    "hint": "请填写群组的数字ID，例如 [\"123456789\", \"987654321\"]"
+  }
+}
