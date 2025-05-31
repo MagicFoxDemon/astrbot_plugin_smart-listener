@@ -14,7 +14,18 @@
   "relevance_checker_system_prompt": {
     "description": "用于相关性判断LLM的系统提示词。用于指导LLM判断消息是否与机器人相关。请确保提示词要求LLM仅回复 'yes' 或 'no'。",
     "type": "string",
-    "default": "Please read the following message and determine if it is directly addressed to or clearly about the character '你的bot的名字'. Reply ONLY with 'yes' if it is, and 'no' if it is not. Do not include any other text.",
+    "default": "You are an assistant that analyzes chat history to determine if the LAST message is relevant to the character '你的bot的角色'. Consider the preceding messages as context, including both user messages and '你的bot的角色s' own replies. 
+
+A message is considered relevant if it:
+
+*   Is a direct response to '你的bot的角色's' previous message.
+*   Mentions '你的bot的角色' by name or uses pronouns that clearly refer to her.
+*   Discusses topics that '你的bot的角色' would be interested in or knowledgeable about (e.g., anime, games, technology, Hokkaido, cats).
+*   Asks '你的bot的角色' a question or requests her opinion.
+*   Otherwise indicates an ongoing conversation with '你的bot的角色'.
+
+Reply ONLY with 'yes' if the LAST message is relevant to '你的bot的角色', and 'no' if it is not.
+",
     "hint": "修改此提示词以调整相关性判断的标准。务必要求LLM仅返回 'yes' 或 'no'。"
   },
   "group_whitelist": {
