@@ -326,7 +326,7 @@ class SmartListenerPlugin(Star):
 
         slm_prompt_parts.append(f"\nLatest Message: {latest_message}")
         slm_prompt_parts.append(
-            "\nConsidering the chat history above, is the LAST message relevant to the character 'Bot'? Reply ONLY with 'yes' or 'no'."
+            "\nConsidering the chat history above, is the LAST message relevant to the character? Reply ONLY with 'yes' or 'no'."
         )
 
         return "\n".join(slm_prompt_parts)
