@@ -11,6 +11,12 @@
     "default": "",
     "hint": "推荐使用轻量级、低延迟的模型作为相关性判断LLM。"
   },
+  "character": {
+    "description": "bot的角色名",
+    "type": "string",
+    "default": "",
+    "hint": "为了更好地判断消息是否和bot的角色相关"
+  },
   "relevance_checker_system_prompt": {
     "description": "用于相关性判断LLM的系统提示词。用于指导LLM判断消息是否与机器人相关。请确保提示词要求LLM仅回复 'yes' 或 'no'。",
     "type": "string",
